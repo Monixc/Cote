@@ -1,14 +1,18 @@
-const fs = require("fs");
-let input = fs.readFileSync(0).toString().trim().split(" ").map(Number);
-let [a, b, c] = input;
-let min = a;
+const fs = require('fs');
+let input = fs.readFileSync(0).toString().split(" ").map(Number);
+const [a,b,c] = input;
 
-if(min > b){
-    min = b;
+let res = 0;
+
+if(a<=b && a<=c){
+    res = a
 }
 
-if(min > c){
-    min = c;
+if(b<=a && b<=c){
+    res = b
 }
 
-console.log(min);
+if(c<=a && c<=b){
+    res = c
+}
+console.log(res)
