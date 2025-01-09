@@ -1,9 +1,12 @@
-const input = require("fs").readFileSync(0).toString().split(" ").map(Number);
+const fs = require('fs');
 
-const [h, w] = input;
-let b = (10000*w)/(h*h);
+let [a,b] = fs.readFileSync(0).toString().split(' ').map(Number);
 
-console.log(parseInt(b));
-if(b > 25){
-    console.log("Obesity");
+const bmi =  Math.floor((10000*b) / (a*a))
+
+if(bmi>25){
+    console.log(bmi)
+    console.log('Obesity')
+}else{
+    console.log(bmi)
 }
