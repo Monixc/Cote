@@ -1,10 +1,14 @@
 const fs = require("fs");
-let input = Number(fs.readFileSync(0).toString());
+let input = fs.readFileSync(0).toString().trim();
 
-if(input < 0){
+let a = Number(input);
+
+if (a < 0) {
     console.log("ice");
-}else if(input >= 100){
-    console.loog("vapor");
-}else{
+}
+else if (a >= 100) {
+    console.log("vapor");
+}
+else {
     console.log("water");
 }
