@@ -5,4 +5,4 @@ let [a, b] = input;
 a += b;
 b += a;
 
-console.log(`${a} ${b}`);
+console.log(a, b);
