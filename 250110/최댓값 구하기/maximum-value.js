@@ -3,13 +3,15 @@ let input = fs.readFileSync(0).toString().trim().split(" ").map(Number);
 const [a, b, c] = input;
 let max = "";
 
-if(a > b && a > c){
+if(a > b){
     max = a;
 }
-else if(b > a && b > c){
+
+if(b > c){
     max = b;
 }
-else{
+
+if(a < c){
     max = c;
 }
 
