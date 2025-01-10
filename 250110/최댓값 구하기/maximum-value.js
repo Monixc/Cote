@@ -1,18 +1,20 @@
 const fs = require("fs");
 let input = fs.readFileSync(0).toString().trim().split(" ").map(Number);
 const [a, b, c] = input;
-let max = "";
 
-if(a > b){
-    max = a;
+if (a >= b) {
+    if (a >= c) {
+        console.log(a);
+    }
+    else {
+        console.log(c);
+    }
 }
-
-if(b > c){
-    max = b;
+else {
+    if (b >= c) {
+        console.log(b);
+    }
+    else {
+        console.log(c);
+    }
 }
-
-if(a < c){
-    max = c;
-}
-
-console.log(max);
