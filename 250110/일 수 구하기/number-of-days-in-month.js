@@ -5,7 +5,10 @@ if (!((year % 4 == 0 && year % 100 != 0) || year % 400 == 0)) {
     if(year=== 2){
         console.log(28);
     }
-    else if(year % 2 === 0 && year !== 8){
+    else if(year === 8){
+        console.log(31);
+    }
+    else if(year % 2 === 0 ){
         console.log(30);
     }
     else{
