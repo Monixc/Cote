@@ -1,15 +1,17 @@
 const fs = require("fs");
-let input = fs.readFileSync(0).toString().trim().split(" ").map(Number);
-let [a, b] = input;
+let input = fs.readFileSync(0).toString().trim().split(" ");
+let a = Number(input[0]);
+let b = Number(input[1]);
+
 let result = "";
-for(let i = a; i <= b; i++){
-    if(i%2===0){
-        i += 3;
-        result += (i + " ");
+while (a <= b) {
+    result += a + " ";
+    if (a % 2 === 1) {
+        a *= 2;
     }
-    else if(i%2 === 1){
-        i *= 2;
-        result += (i+ " ");
+    else {
+        a += 3;
     }
 }
+
 console.log(result);
