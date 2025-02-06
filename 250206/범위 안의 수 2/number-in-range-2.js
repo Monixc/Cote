@@ -10,4 +10,4 @@ for(let i = 0; i <= 9; i++){
     }
 }
 
-console.log("%d %d", sum, (sum/cnt).toFixed(1));
+console.log(sum, (sum/cnt).toFixed(1));
