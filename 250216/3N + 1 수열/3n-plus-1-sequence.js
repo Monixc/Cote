@@ -4,19 +4,14 @@ let cnt = 0;
 
 while(true){
     
-    if(N === 1){
-        console.log(cnt);
-        break;
-    }
-    else{
-        if(N % 2 === 0){
-        N /= 2;
-        cnt++;
-        }
-        else if(N % 2 === 1){
-            N = N * 3 + 1;
-            cnt++;
-        }
-    }
+    if(N === 1) break;
     
+    if(N % 2 === 0){
+        N /= 2;
+    }
+    else if(N % 2 === 1){
+        N = N * 3 + 1;
+    }
+    cnt++;
 }
+console.log(cnt);
