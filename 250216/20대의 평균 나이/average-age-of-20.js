@@ -7,11 +7,10 @@ while(true)
 {
     
     if(input[index] >= 30 || input[index] < 20){
+        console.log((res/index).toFixed(2))
         break;
     }    
 
     res += input[index];
     index++;
 }
-
-console.log((res/index).toFixed(2));
