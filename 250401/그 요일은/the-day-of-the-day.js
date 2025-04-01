@@ -31,7 +31,7 @@ function numOfDays(m, d){
 //예: A가 Sat이라면 5(day[5]) + 1
 for(let i = 0; i <= day.length; i++){
     if(A === day[i]){
-        indexOfDay = i + 1;
+        indexOfDay = i;
     }
 }
 
