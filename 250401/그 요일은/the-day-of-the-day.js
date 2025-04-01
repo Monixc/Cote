@@ -23,7 +23,7 @@ function numOfDays(m, d){
 
 for(let i = 0; i <= day.length; i++){
     if(A === day[i]){
-        indexOfDay = i + 1;
+        indexOfDay = i - 1;
     }
 }
 
