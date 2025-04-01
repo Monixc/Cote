@@ -29,4 +29,4 @@ function getElementByIndex(arr, index){
 const numOfStart = numOfDays(m1, d1);
 const numOfEnd = numOfDays(m2, d2);
 
-console.log(getElementByIndex(day, numOfEnd-numOfStart));
+console.log(getElementByIndex(day, (numOfEnd-numOfStart) % 7));
