@@ -37,4 +37,11 @@ for(let i = 0; i <= day.length; i++){
 
 //시작일과 종료일 간 차이를 계산
 const diff = numOfDays(m2, d2) - numOfDays(m1, d1) + indexOfDay;
-console.log(parseInt(diff / 7));
+let cnt = Math.floor(diff / 7);
+const remainder = diff % 7;
+
+if(remainder >= indexOfDay){
+    cnt++;
+}
+
+console.log(cnt);
