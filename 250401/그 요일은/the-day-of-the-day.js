@@ -23,9 +23,9 @@ function numOfDays(m, d){
 
 for(let i = 0; i <= day.length; i++){
     if(A === day[i]){
-        indexOfDay = i;
+        indexOfDay = i+1;
     }
 }
 
 const diff = numOfDays(m2, d2) - numOfDays(m1, d1);
-console.log(parseInt((diff + indexOfDay) / 7 + 1));
+console.log(parseInt((diff + indexOfDay) / 7));
